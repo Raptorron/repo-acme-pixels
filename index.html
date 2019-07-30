@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <style>
+        </style>
+    </head>
+    <body>
+        <h1>hello world</h1>
+        <div id=gridContainer>rows</div>
+        <script>
+            const grid=document.querySelector('gridContainer')
+        const buildTable = (n)=>{
+            const rows=[];
+            const col=[];
+            for(let i=0;i<n;i++){
+             const row=[];
+            for(let j=0;j<n;j++){
+                 row.push(0)
+             }   
+             rows.push(row)
+            }
+            return rows;
+        }
+        console.log(buildTable(5));
+        buildTable.map(cell =>{
+            
+        })
+//grid.innerHTML=
+        </script>
+    </body>
+</html>
