@@ -35,10 +35,10 @@
         return rows.map(row => `<div class="row">${row.map(cell=>`<div class='cell'>${ cell}</div>`).join('')}</div>`).join('');}
 
         grid.addEventListener('click', (ev)=>{
-          const cell = ev.target;
-          const cdx=[...row.children].indexOf(cell);
-          const rdx=[...row.perantNode.children].indexOf(row);
-          data[rdx][cdx]++;
+          console.log(ev.target.perantNode);
+          // const cdx=[...ev.target.children].indexOf(ev.target);
+          // const rdx=[...ev.target.perantNode.children].indexOf(ev.target);
+          // data[rdx][cdx]++;
           render();
         });
         console.log(data);
